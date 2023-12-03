@@ -48,6 +48,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            echo "hello world from ssh"
-          debug: true
+            docker pull ghcr.io/${{ github.repository_owner }}/${{ github.repository }}
+            
           
