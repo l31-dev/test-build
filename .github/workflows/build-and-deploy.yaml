@@ -48,9 +48,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            docker stop ${{github.repository}}
-            docker rm ${{github.repository}}
-            docker rmi ${{github.repository}}
+            docker stop ghcr.io/${{github.repository}}
+            docker rm ghcr.io/${{github.repository}}
+            docker rmi ghcr.io/${{github.repository}}
             docker pull ghcr.io/${{github.repository}}:latest
-            
-          
