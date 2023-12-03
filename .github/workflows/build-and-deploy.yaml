@@ -49,3 +49,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           script: |
             echo "hello world from ssh"
+          debug: true
