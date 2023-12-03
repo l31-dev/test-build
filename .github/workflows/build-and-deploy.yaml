@@ -48,6 +48,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           script: |
-            docker pull ghcr.io/${{ github.repository_owner }}/${{ github.repository }}
+            docker pull ghcr.io/${{github.repository_owner}}/${{github.repository_owner}}/${{github.repository}}:latest
             
           
