@@ -50,3 +50,4 @@ jobs:
           script: |
             echo "hello world from ssh"
           debug: true
+          
