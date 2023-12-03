@@ -23,5 +23,5 @@ jobs:
       
       - name: Build and push docker image
         run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/${{ github.repository }}
+          docker build -t ghcr.io/${{ github.repository_owner }}/${{ github.repository }} .
           docker push ghcr.io/${{ github.repository_owner }}/${{ github.repository }}
