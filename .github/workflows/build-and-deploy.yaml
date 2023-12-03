@@ -51,6 +51,6 @@ jobs:
             docker stop ${{github.repository}}
             docker rm ${{github.repository}}
             docker rmi ${{github.repository}}
-            docker pull ghcr.io/${{github.repository_owner}}/${{github.repository}}:latest
+            docker pull ghcr.io/${{github.repository}}:latest
             
           
